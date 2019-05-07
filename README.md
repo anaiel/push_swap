@@ -36,7 +36,7 @@ I used a version of the recursive quick-sort algorithm. Since time complexity wa
   2. For the `len` top numbers in the list, push those which are smaller than the median onto stack b
   3. Use quick_sort_a on the `len / 2` elements left in stack a
   4. Use quick_sort_b on the `len / 2` elements pushed on stack b
- * quick_sort_b, which works like this:
+* quick_sort_b, which works like this:
   1. Find the median of the `len` top numbers in stack b (for the first iteration, len is half the number of numbers in the list)
   2. For the `len` top numbers of the stack, push those which are higher than the median onto stack a.
   3. Use quick_sort_a on the `len / 2` elements which where pushed onto stack a.
